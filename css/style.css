@@ -42,6 +42,22 @@ body {
   margin-right: 3rem;
   color: var(--gray-color-dark); }
 
+.imageBox {
+  margin: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center; }
+  .imageBox__photo {
+    margin: 1rem;
+    width: 31%;
+    height: 31%;
+    transition: all .3s; }
+    .imageBox__photo--1 {
+      flex: 1 0 99%; }
+  .imageBox__photo:hover:not(:first-child) {
+    z-index: 10;
+    transform: scale(1.25); }
+
 .footer__icon--1 {
   width: 4rem;
   height: 4rem;
@@ -56,8 +72,7 @@ body {
 
 .container {
   margin: 6rem auto;
-  width: 90%;
-  height: auto;
+  width: 95%;
   border-radius: 2rem;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.7); }
 
@@ -69,12 +84,11 @@ body {
   align-items: center; }
 
 .content {
-  display: flex;
-  height: 70vh; }
+  display: flex; }
 
 .sideNav {
   background-color: var(--gray-color-dark);
-  flex: 0 0 20%; }
+  flex: 0 0 15%; }
 
 .mainSection {
   background-image: linear-gradient(to left top, var(--secondary-color-medium), var(--secondary-color-dark));

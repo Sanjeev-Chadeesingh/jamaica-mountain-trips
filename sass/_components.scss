@@ -13,6 +13,28 @@
     }
 }
 
+.imageBox {
+    margin: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    &__photo {
+        margin: 1rem;
+        width: 31%;
+        height: 31%;
+        transition: all .3s;
+        &--1 {
+            flex: 1 0 99%;
+        }
+    }
+    &__photo:hover {
+        &:not(:first-child) {
+            z-index: 10;
+            transform: scale(1.25);
+        }
+    }
+}
+
 .footer {
 
     &__icon--1 {
