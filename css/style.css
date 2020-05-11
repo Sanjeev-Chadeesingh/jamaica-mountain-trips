@@ -26,7 +26,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  background-image: linear-gradient(to bottom, var(--primary-color-dark), var(--primary-color-medium));
+  background-image: linear-gradient(to bottom, var(--primary-color-medium), var(--primary-color-dark));
   background-repeat: no-repeat;
   height: 100vh;
   font-family: var(--primary-font);
@@ -36,5 +36,19 @@ body {
   margin: 6rem auto;
   width: 90%;
   height: 70vh;
-  background-image: linear-gradient(to left top, var(--secondary-color-dark), var(--secondary-color-light));
+  border-radius: 2rem;
+  background-image: linear-gradient(to left top, var(--secondary-color-light), var(--secondary-color-dark));
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.7); }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header__iconBox--homeIcon {
+    width: 8.5rem;
+    height: 8.5rem;
+    margin-left: 3rem;
+    fill: var(--primary-color-dark); }
+  .header__headingsBox {
+    margin-right: 3rem;
+    color: var(--gray-color-dark); }

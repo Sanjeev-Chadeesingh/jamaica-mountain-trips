@@ -20,8 +20,6 @@
     --primary-font: 'Baloo Da 2', cursive;
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -40,10 +38,9 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to bottom, var(--primary-color-dark), var(--primary-color-medium));
+    background-image: linear-gradient(to bottom, var(--primary-color-medium), var(--primary-color-dark));
     background-repeat: no-repeat;
     height: 100vh;
     font-family: var(--primary-font);
     font-size: 1.6rem;
 }
-
