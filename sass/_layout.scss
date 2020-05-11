@@ -1,26 +1,40 @@
 .container {
     margin: 6rem auto;
     width: 90%;
-    height: 70vh;
+    height: auto;
     border-radius: 2rem;
-    background-image: linear-gradient(to left top, var(--secondary-color-light), var(--secondary-color-dark));
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, .7);
 }
 
 .header {
+    background-color: var(--secondary-color-light);
+    border-radius: 2rem 2rem 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
-    &__iconBox--homeIcon {
-        width: 8.5rem;
-        height: 8.5rem;
-        margin-left: 3rem;
-        fill: var(--primary-color-dark);
-    }
+.content {
+    display: flex;
+    height: 70vh;
+}
 
-    &__headingsBox {
-        margin-right: 3rem;
-        color: var(--gray-color-dark);
+.sideNav {
+    background-color: var(--gray-color-dark);
+    flex: 0 0 20%;
+}
+
+.mainSection {
+    background-image: linear-gradient(to left top, var(--secondary-color-medium), var(--secondary-color-dark));
+    flex: 1;
+}
+
+.footer {
+    background-color: var(--secondary-color-light);
+    padding: 2rem;
+    border-radius: 0 0 2rem 2rem;
+    &__iconBox {
+        display: flex;
+        justify-content: space-between;
     }
 }

@@ -7,7 +7,7 @@
   --secondary-color-light: #12CBC4;
   --color-black: #000;
   --color-white: #fff;
-  --gray-color-dark: #242424;
+  --gray-color-dark: #444444;
   --gray-color-medium: #6b6b6b;
   --gray-color-light: #acacac;
   --primary-font: 'Baloo Da 2', cursive; }
@@ -28,27 +28,62 @@ html {
 body {
   background-image: linear-gradient(to bottom, var(--primary-color-medium), var(--primary-color-dark));
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
   font-family: var(--primary-font);
   font-size: 1.6rem; }
+
+.header__iconBox--homeIcon {
+  width: 9rem;
+  height: 9rem;
+  margin-left: 3rem;
+  fill: var(--primary-color-dark); }
+
+.header__headingsBox {
+  margin-right: 3rem;
+  color: var(--gray-color-dark); }
+
+.footer__icon--1 {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 3rem;
+  fill: var(--primary-color-dark); }
+
+.footer__icon--2 {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 3rem;
+  fill: var(--primary-color-dark); }
 
 .container {
   margin: 6rem auto;
   width: 90%;
-  height: 70vh;
+  height: auto;
   border-radius: 2rem;
-  background-image: linear-gradient(to left top, var(--secondary-color-light), var(--secondary-color-dark));
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.7); }
 
 .header {
+  background-color: var(--secondary-color-light);
+  border-radius: 2rem 2rem 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .header__iconBox--homeIcon {
-    width: 8.5rem;
-    height: 8.5rem;
-    margin-left: 3rem;
-    fill: var(--primary-color-dark); }
-  .header__headingsBox {
-    margin-right: 3rem;
-    color: var(--gray-color-dark); }
+
+.content {
+  display: flex;
+  height: 70vh; }
+
+.sideNav {
+  background-color: var(--gray-color-dark);
+  flex: 0 0 20%; }
+
+.mainSection {
+  background-image: linear-gradient(to left top, var(--secondary-color-medium), var(--secondary-color-dark));
+  flex: 1; }
+
+.footer {
+  background-color: var(--secondary-color-light);
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem; }
+  .footer__iconBox {
+    display: flex;
+    justify-content: space-between; }

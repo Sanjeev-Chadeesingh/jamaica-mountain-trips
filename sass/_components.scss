@@ -1,0 +1,31 @@
+.header {
+  
+    &__iconBox--homeIcon {
+        width: 9rem;
+        height: 9rem;
+        margin-left: 3rem;
+        fill: var(--primary-color-dark);
+    }
+
+    &__headingsBox {
+        margin-right: 3rem;
+        color: var(--gray-color-dark);
+    }
+}
+
+.footer {
+
+    &__icon--1 {
+        width: 4rem;
+        height: 4rem;
+        margin-left: 3rem;
+        fill: var(--primary-color-dark);
+    }
+
+    &__icon--2 {
+        width: 4rem;
+        height: 4rem;
+        margin-left: 3rem;
+        fill: var(--primary-color-dark);
+    }
+}
